@@ -1,0 +1,161 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #673ab7;
+    color: white;
+    text-align: center;
+    padding: 20px 20px 140px;
+    font-size: 25px;
+    position: relative;
+    z-index: 1;
+    font-weight: bold;
+}
+
+.container {
+    width: 50%;
+    background-color: #fff;
+    padding: 20px;
+    margin: -80px auto 30px auto;
+    text-align: left;
+    position: relative;
+    z-index: 2; 
+}
+
+.form-title {
+    background-color: white; 
+    color: #673AB7; 
+    text-align: center;
+    font-size: 18px;
+    padding: 15px 0;
+    position: relative;
+}
+
+.form-title::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(to right, #ccc 0%, #ccc 40%, #673AB7 40%, #673AB7 60%, #ccc 60%, #ccc 100%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+#title {
+    text-align: left;
+    font-size: 30px;
+    padding-bottom: 0;
+    margin-bottom: 10px;
+}
+
+#subtitle {
+    text-align: left;
+    font-size: 17px;
+    margin-top: 0;
+}
+
+h2 {
+    text-align: left;
+    color: #333;
+}
+
+h3 {
+    text-align: center;
+    color: #454343;
+    font-weight: lighter;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    color: #454343;
+    padding-top: 10px;
+}
+
+input {
+    width: 50%;
+    padding: 10px 0;
+    margin-top: 5px;
+    border: none; 
+    border-bottom: 2px solid #ccc;
+    display: block;
+    font-size: 16px; 
+    padding-top: 10px;
+}
+
+input::placeholder    {
+    color: #999; 
+}
+
+textarea {
+    width: 50%; 
+    height: 80px;
+    padding: 10px 0;
+    margin-top: 5px;
+    border: 2px solid #ccc;
+    border-radius: 4px; 
+    font-size: 16px;
+}
+
+textarea::placeholder {
+    color: #999; 
+    padding-left: 4px;
+}
+
+.radio-group {
+    display: flex;
+    width: 15%;
+    align-items: center;
+    gap: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #454343;
+    margin: 0;
+}
+
+.radio-group label {
+    display: flex;
+    align-items: center;
+    gap: 0;
+    font-size: 16px;
+}
+
+.checkbox-group {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+    width: 50%;
+    padding: 0; 
+    margin: 0; 
+}
+
+.checkbox-group label {
+    display: flex; 
+    align-items: center;
+    gap: 5px;
+    margin: 0;
+    padding: 0; 
+}
+
+.checkbox-group input {
+    margin: 0; 
+    padding: 0;
+    width: auto; 
+}
+
+button {
+    width: 10%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #673ab7;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
